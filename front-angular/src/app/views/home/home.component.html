@@ -1,0 +1,11 @@
+<h1>{{ msg }}</h1>
+<h2>{{ legenda }}</h2>
+
+<!-- <input type="text" [value]="legenda"> -->
+<input type="text" [(ngModel)]="legenda">
+<!-- ngModel é bind de duas vias (two ways data binding), ou seja, o que alteramos na tela,
+    é alterado no backend dinamicamente. Precisa importar módulo "FormsModule" em "app.module.ts" -->
+
+<button (click)="resetLegenda()">Reset Legenda</button>
+<!-- Assim como os colchetes em 'value' (chatter?), os parênteses de 'click'
+    (binding de evento) servem para usar funções e parâmeros com eventos -->

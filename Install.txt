@@ -1,0 +1,37 @@
+    -Instale primeiro o NODE.JS.
+
+	    ANGULAR
+
+    -Instalação:
+$ npm i -g @angular/cli
+    -Iniciar projeto com a pasta "front-angular":
+$ ng new front-angular --minimal
+    -Iniciar servidor no endereço "http://localhost:4200"
+$ npm start
+    -Gerar componentes CSS, HTML e TS (typescript). Mas antes, altere para "false" os itens
+    "inLineTemplate" e "inLineStyle" no arquivo "angular.json"
+$ ng generate component views/home
+    -OU simplesmente:
+$ ng g c views/home
+    -O primeiro arquivo a carregar é o "src/main.ts", que carrega o "app.module.ts",
+    e dentro dele a propriedade "bootstrap" carrega "app.component.ts".
+
+	    REACT
+
+    -Instalação:
+$ npm install -g create-react-app
+    -OU este para instalar o projeto na pasta "front-react" e depois deleta arquivos temporários:
+$ npx create-react-app front-react
+    -Iniciar servidor no endereço "http://localhost:3000"
+$ npm start
+    -O primeiro arquivo a carregar é o "src/index.js" que carrega o "App.js"
+
+	    VUE
+
+    -Instalação:
+$ npm i -g @vue/cli
+    -Iniciar projeto com a pasta "front-vue":
+$ vue create front-vue
+    -Iniciar servidor no endereço "http://localhost:8080"
+$ npm run serve
+    -O primeiro arquivo a carregar é o "src/main.js" que carrega o "App.js" e importa "App.vue".
